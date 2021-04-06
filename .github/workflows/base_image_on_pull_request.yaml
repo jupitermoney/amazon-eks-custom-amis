@@ -1,8 +1,10 @@
-name: cis
+name:  cis
 on:
   pull_request:
     branches:
       - main
+  schedule:
+    - cron: "* * 15 * *"
 jobs:
   pipelines:
     environment: AUDIT
