@@ -1,4 +1,4 @@
-name: cis
+name:  cis
 on:
   pull_request:
     branches:
