@@ -1,10 +1,10 @@
-name:  cis
+name:  cisami_create_on_pull_request
 on:
   pull_request:
     branches:
       - main
   schedule:
-    - cron: "* * 15 * *"
+    - cron: "0 0 15 * *"
 jobs:
   pipelines:
     environment: AUDIT
