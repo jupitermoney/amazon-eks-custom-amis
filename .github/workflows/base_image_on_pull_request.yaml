@@ -24,6 +24,6 @@ jobs:
         env:
           VER: "1.5.6" 
       - run: |
-          make build-al2-1.18
+          make build-al2-1.19
           ami=`aws ec2 describe-images --region ap-south-1  --filters "Name=tag:Type,Values=Custom"  --query "reverse(sort_by(Images, &CreationDate))[:1].ImageId"   --output text`
           aws ec2 modify-image-attribute --region ap-south-1 --image-id $ami  --launch-permission "Add=[{UserId=516580504223}]"
