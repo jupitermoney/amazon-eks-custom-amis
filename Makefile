@@ -10,6 +10,7 @@ EKS_115_VERSION := 1.15.12
 EKS_116_VERSION := 1.16.15
 EKS_117_VERSION := 1.17.12
 EKS_118_VERSION := 1.18.9
+EKS_119_VERSION := 1.19
 
 build:
 	packer build \
@@ -32,6 +33,8 @@ build-al2-1.17:
 
 build-al2-1.18:
 	$(MAKE) build PACKER_FILE=amazon-eks-node-al2.json eks_version=1.18
+build-al2-1.19:
+	$(MAKE) build PACKER_FILE=amazon-eks-node-al2.json eks_version=1.19
 
 # Ubuntu 18.04
 #-----------------------------------------------------
