@@ -2,7 +2,7 @@
   "variables":{
     "aws_region":"ap-south-1",
     "ami_description":"EKS Kubernetes Worker AMI on AmazonLinux2 image (k8s: {{user `eks_version`}})",
-    "eks_version":"1.19",
+    "eks_version":"1.20",
     "volume_size":"100",
     "vpc_id":"",
     "subnet_id":"",
